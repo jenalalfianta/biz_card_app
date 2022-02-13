@@ -65,23 +65,54 @@ Container _getCard() {
       children: [
         Text(
           "Jenal Alfianta B",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
         ),
-        Text(
-          "jenalalfianta.com",
-          style: TextStyle(color: Colors.white),
+        Padding(padding: EdgeInsets.only(top: 10.0)),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                FaIcon(
+                  FontAwesomeIcons.twitter,
+                  color: Colors.white,
+                  size: 18.0,
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  ' @jenalalfianta',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ],
+            ),
+          ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FaIcon(
-              FontAwesomeIcons.twitter,
-              color: Colors.white,
-              size: 18.0,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                FaIcon(
+                  FontAwesomeIcons.globe,
+                  color: Colors.white,
+                  size: 18.0,
+                ),
+              ],
             ),
-            Text(
-              '@jenalalfianta',
-              style: TextStyle(color: Colors.white),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  ' jenalalfianta.com',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ],
             ),
           ],
         )
